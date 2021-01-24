@@ -5,6 +5,6 @@ RUN bundle config --global frozen 1
 
 WORKDIR /usr/src/app/
 
-RUN gem install twitter
-
+RUN gem install twitter dotenv
+COPY .env ./
 COPY . .
